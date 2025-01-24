@@ -43,5 +43,14 @@
 </body>
 
 <iframe src="https://super-mario-64.gitlab.io/#google_vignette" title="Games" width="100%" height="100%"></iframe>
-  Zeldym.github.ioGaming
+    </script>
+  </body>
+  <script>
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+      event.preventDefault();
+    }
+  });
+</script>
 </html>
