@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script>
-
         function openGame() {
-            var win = window.open();
-            var url = "https://biologyhelp.github.io/Ocean/Home.html";
-            var iframe = win.document.createElement('iframe');
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-            location.replace("https://launchpad.classlink.com/lwsd");
-        }  
-         window.onload = openGame();
+    var win = window.open();
+    var url = "https://biologyhelp.github.io/Ocean/Home.html";
+    win.document.write('<html><head><style>body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }</style></head><body></body></html>');
+    var iframe = win.document.createElement('iframe');
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.border = "none";
+    iframe.src = url;
+    win.document.body.appendChild(iframe);
+    location.replace("https://launchpad.classlink.com/lwsd");
+}
+
+window.onload = openGame;
+
     </script>
 </head>
 <head>
